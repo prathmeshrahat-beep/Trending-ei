@@ -1,0 +1,10 @@
+{
+  "name": "TradePulse AI - Trading & Market Analysis Assistant",
+  "description": "Professional Trading AI Assistant designed for analyzing financial charts, candlestick patterns, technical indicators, Indian/US/Crypto/Forex markets, and structured risk assessment.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

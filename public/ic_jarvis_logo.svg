@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a152e" />
+      <stop offset="60%" stop-color="#040813" />
+      <stop offset="100%" stop-color="#02040a" />
+    </radialGradient>
+
+    <!-- Outer Metallic Bezel Gradient -->
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f617d" />
+      <stop offset="25%" stop-color="#232d3f" />
+      <stop offset="50%" stop-color="#141c2b" />
+      <stop offset="75%" stop-color="#232d3f" />
+      <stop offset="100%" stop-color="#3d4d66" />
+    </linearGradient>
+
+    <!-- Core Cyan Glow Gradient -->
+    <radialGradient id="cyanCoreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="20%" stop-color="#a5f3fc" stop-opacity="1" />
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="80%" stop-color="#083344" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow Filter -->
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="16" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Sci-Fi Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)" />
+
+  <!-- Outer Ambient Aura -->
+  <circle cx="400" cy="400" r="380" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.2" />
+
+  <!-- Outer Industrial Bezel -->
+  <circle cx="400" cy="400" r="350" fill="none" stroke="url(#bezelGrad)" stroke-width="36" />
+  <circle cx="400" cy="400" r="368" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.7" />
+  <circle cx="400" cy="400" r="332" fill="none" stroke="#0f172a" stroke-width="4" />
+
+  <!-- 8 Bezel Mechanical Bolts -->
+  <!-- 0, 45, 90, 135, 180, 225, 270, 315 deg -->
+  <circle cx="750" cy="400" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="750" cy="400" r="3.5" fill="#38bdf8" />
+
+  <circle cx="647.5" cy="647.5" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="647.5" cy="647.5" r="3.5" fill="#38bdf8" />
+
+  <circle cx="400" cy="750" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="400" cy="750" r="3.5" fill="#38bdf8" />
+
+  <circle cx="152.5" cy="647.5" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="152.5" cy="647.5" r="3.5" fill="#38bdf8" />
+
+  <circle cx="50" cy="400" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="50" cy="400" r="3.5" fill="#38bdf8" />
+
+  <circle cx="152.5" cy="152.5" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="152.5" cy="152.5" r="3.5" fill="#38bdf8" />
+
+  <circle cx="400" cy="50" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="400" cy="50" r="3.5" fill="#38bdf8" />
+
+  <circle cx="647.5" cy="152.5" r="9" fill="#0f172a" stroke="#64748b" stroke-width="2.5" />
+  <circle cx="647.5" cy="152.5" r="3.5" fill="#38bdf8" />
+
+  <!-- Outer Neon Blue Glow Ring -->
+  <circle cx="400" cy="400" r="305" fill="none" stroke="#00f2fe" stroke-width="12" filter="url(#intenseGlow)" />
+  <circle cx="400" cy="400" r="305" fill="none" stroke="#ffffff" stroke-width="5" />
+
+  <!-- Segmented Arc HUD Track -->
+  <circle cx="400" cy="400" r="260" fill="none" stroke="#06b6d4" stroke-width="16" stroke-dasharray="65 24 30 24 110 32" filter="url(#intenseGlow)" />
+  <circle cx="400" cy="400" r="236" fill="none" stroke="#38bdf8" stroke-width="6" stroke-dasharray="20 16 36 20" />
+
+  <!-- Concentric Inner HUD Track -->
+  <circle cx="400" cy="400" r="205" fill="none" stroke="#0ea5e9" stroke-width="9" stroke-dasharray="12 12 24 12 6 9" />
+  <circle cx="400" cy="400" r="185" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-dasharray="90 45" />
+
+  <!-- Core Neon Reactor Disc -->
+  <circle cx="400" cy="400" r="148" fill="url(#cyanCoreGlow)" />
+  <circle cx="400" cy="400" r="138" fill="#061224" stroke="#22d3ee" stroke-width="5" filter="url(#intenseGlow)" />
+
+  <!-- Crosshairs -->
+  <line x1="400" y1="185" x2="400" y2="245" stroke="#38bdf8" stroke-width="3" />
+  <line x1="400" y1="555" x2="400" y2="615" stroke="#38bdf8" stroke-width="3" />
+  <line x1="185" y1="400" x2="245" y2="400" stroke="#38bdf8" stroke-width="3" />
+  <line x1="555" y1="400" x2="615" y2="400" stroke="#38bdf8" stroke-width="3" />
+
+  <!-- Central Futuristic "A" Constellation Emblem -->
+  <g transform="translate(400, 400)" filter="url(#intenseGlow)">
+    <!-- Interconnected Network -->
+    <line x1="-58" y1="-15" x2="0" y2="-85" stroke="#a5f3fc" stroke-width="2.5" opacity="0.8" />
+    <line x1="-58" y1="-15" x2="-34" y2="44" stroke="#a5f3fc" stroke-width="2.5" opacity="0.8" />
+    <line x1="-24" y1="-38" x2="-58" y2="-15" stroke="#a5f3fc" stroke-width="2.5" opacity="0.8" />
+    <line x1="0" y1="-85" x2="58" y2="-15" stroke="#a5f3fc" stroke-width="2.5" opacity="0.8" />
+    <line x1="58" y1="-15" x2="34" y2="44" stroke="#a5f3fc" stroke-width="2.5" opacity="0.8" />
+    <line x1="0" y1="58" x2="0" y2="90" stroke="#38bdf8" stroke-width="3" />
+
+    <!-- Nodes -->
+    <circle cx="-58" cy="-15" r="5" fill="#ffffff" stroke="#06b6d4" stroke-width="2" />
+    <circle cx="-24" cy="-38" r="4.5" fill="#ffffff" stroke="#06b6d4" stroke-width="2" />
+    <circle cx="-34" cy="44" r="5" fill="#ffffff" stroke="#06b6d4" stroke-width="2" />
+    <circle cx="58" cy="-15" r="5" fill="#ffffff" stroke="#06b6d4" stroke-width="2" />
+    <circle cx="0" cy="58" r="6" fill="#ffffff" stroke="#06b6d4" stroke-width="2" />
+
+    <!-- Stylized Futuristic Letter "A" -->
+    <path
+      d="M 0 -75 L -44 50 L -18 50 L -6 16 L 25 16 L 60 -18 L 32 -18 L 12 6 L -9 6 L 0 -35 Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="6"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+    <path
+      d="M -6 16 L 62 -12 L 34 44"
+      fill="none"
+      stroke="#67e8f9"
+      stroke-width="5"
+      stroke-linejoin="round"
+    />
+
+    <!-- Core Star Flare -->
+    <circle cx="0" cy="0" r="10" fill="#ffffff" />
+  </g>
+</svg>
